@@ -1,5 +1,5 @@
 void createVirus() {
-  if (frameCounter % 1 == 0 && vaccineProgress != 100 && percentAffected != 1) {
+  if (frameCounter % 30 == 0 && vaccineProgress != 100 && percentAffected != 1) {
     
     int count = life.length; //Current amount of cells that can infect others.
     

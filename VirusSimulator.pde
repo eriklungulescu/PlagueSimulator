@@ -21,7 +21,7 @@ int infectability = 75; //How likely a person is to infect others around them be
 float deathRate = 90; //How likely a person is to die -> Currently there is a 90% chance that the individual will die from their infection. Number from (0,100);
 
 int speedAirplane = 15; //Speed of an airplane.
-int blinksPerSecond = 60; //Recommended to have a framerate of 30 or higher.
+int blinksPerSecond = 30; //Recommended to have a framerate of 30 or higher.
 
 //DO NOT TOUCH THESE VALUES:
 Cell[] life = new Cell[0];
@@ -95,7 +95,7 @@ void mousePressed(){
   boolean isPlacedOnDead = false;
   boolean isPlacedOnStable = false;
    
-  //Chekcs that the cell is on land.
+  //Checks that the cell is on land.
   for (int m = 0; m < takenLandCoordinates.length; m ++) {
     if (currX == takenLandCoordinates[m].xPos && currY == takenLandCoordinates[m].yPos) {
       isPlacedOnLand = true;
